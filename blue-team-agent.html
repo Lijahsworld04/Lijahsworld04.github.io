@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blue Team Agent — Aalijah's Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="case-page">
+
+  <a class="back-link" href="index.html">← Back to portfolio</a>
+
+  <main>
+    <h1>Blue Team Agent</h1>
+    <p class="role">Defending the system</p>
+
+    <div class="case-section">
+      <h3>Problem</h3>
+      <p>The backend agent needed protection from malicious or malformed input.</p>
+    </div>
+
+    <div class="case-section">
+      <h3>Architecture</h3>
+      <p>Two-layer design — a free "Precheck" agent (regex, ClamAV, YARA, nmap, dependency audits) that runs on every interaction, escalating to a paid LLM-based "Advanced" agent only when something's ambiguous.</p>
+      <!-- <img src="images/blueteam-diagram.png" alt="Blue team agent architecture diagram"> -->
+    </div>
+
+    <div class="case-section">
+      <h3>My Role</h3>
+      <p>Designed the tiered architecture and built the Precheck layer in n8n.</p>
+      <!-- <img src="images/blueteam-canvas.png" alt="n8n canvas screenshot"> -->
+    </div>
+
+    <div class="case-section">
+      <h3>Outcome</h3>
+      <p>Describe what it currently catches / where it stands.</p>
+    </div>
+  </main>
+
+</body>
+</html>

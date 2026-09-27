@@ -16,44 +16,29 @@
 
   <main>
 
-    <section class="project">
-      <h2>Backend AI Agent</h2>
+    <a class="project" href="backend-agent.html">
+      <h2>Backend AI Agent <span class="arrow">→</span></h2>
       <p class="role">The core system</p>
-      <p><strong>Problem:</strong> Describe what the agent needed to do and for who.</p>
-      <p><strong>Architecture:</strong> Describe the build — n8n workflow, what tools/data it connects to.</p>
-      <p><strong>My role:</strong> What you specifically designed or built.</p>
-      <p><strong>Outcome:</strong> What it does now / what it enabled.</p>
-      <!-- <img src="images/backend-diagram.png" alt="Backend agent architecture"> -->
-    </section>
+      <p class="preview">The AI system at the center of it all — built in n8n to handle real customer and admin work.</p>
+    </a>
 
-    <section class="project">
-      <h2>Blue Team Agent</h2>
+    <a class="project" href="blue-team-agent.html">
+      <h2>Blue Team Agent <span class="arrow">→</span></h2>
       <p class="role">Defending the system</p>
-      <p><strong>Problem:</strong> The backend agent needed protection from malicious or malformed input.</p>
-      <p><strong>Architecture:</strong> Two-layer design — a free "Precheck" agent (regex, ClamAV, YARA, nmap, dependency audits) that runs on every interaction, escalating to a paid LLM-based "Advanced" agent only when something's ambiguous.</p>
-      <p><strong>My role:</strong> Designed the tiered architecture and built the Precheck layer in n8n.</p>
-      <p><strong>Outcome:</strong> Describe what it currently catches / where it stands.</p>
-      <!-- <img src="images/blueteam-diagram.png" alt="Blue team agent architecture"> -->
-    </section>
+      <p class="preview">A two-layer defense system protecting the backend agent — free rule-based prechecks, escalating to LLM reasoning only when needed.</p>
+    </a>
 
-    <section class="project">
-      <h2>Red Team Agent</h2>
+    <a class="project" href="red-team-agent.html">
+      <h2>Red Team Agent <span class="arrow">→</span></h2>
       <p class="role">Testing the defenses</p>
-      <p><strong>Problem:</strong> Needed a way to verify the blue team layer actually holds up under attack.</p>
-      <p><strong>Architecture:</strong> Built an attack library (7 categories) and a Runner that executes each test against the target agent, then an aggregate scoring system — starts at 100, deducts by severity, grades pass/partial/fail.</p>
-      <p><strong>My role:</strong> Hand-built the Runner node by node in n8n to understand each piece; designed the scoring/grading logic.</p>
-      <p><strong>Outcome:</strong> Ran end to end against the backend agent and surfaced real weaknesses in the blue team defenses.</p>
-      <!-- <img src="images/redteam-diagram.png" alt="Red team agent architecture"> -->
-    </section>
+      <p class="preview">A hand-built attack library and test runner that stress-tests the blue team defenses and scores the results.</p>
+    </a>
 
-    <section class="project">
-      <h2>Website</h2>
+    <a class="project" href="website.html">
+      <h2>Website <span class="arrow">→</span></h2>
       <p class="role">Front-end build</p>
-      <p><strong>Problem:</strong> Describe what the site was for.</p>
-      <p><strong>What I built:</strong> Built in VS Code — describe the structure/tech.</p>
-      <p><strong>Status:</strong> Prototype, not yet published.</p>
-      <!-- <img src="images/website-screenshot.png" alt="Website screenshot"> -->
-    </section>
+      <p class="preview">A front-end prototype built in VS Code.</p>
+    </a>
 
   </main>
 

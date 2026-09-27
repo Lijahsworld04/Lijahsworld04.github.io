@@ -35,7 +35,8 @@ header {
   font-family: 'Dancing Script', cursive;
   font-weight: 700;
   font-size: 5.2rem;
-  line-height: 1;
+  line-height: 1.3;
+  padding: 0.1em 0;
   margin: 0 0 6px;
   background: linear-gradient(100deg, var(--lavender) 10%, var(--gold) 55%, var(--lavender) 90%);
   -webkit-background-clip: text;
@@ -69,6 +70,8 @@ main {
 
 .project {
   position: relative;
+  display: block;
+  text-decoration: none;
   background: linear-gradient(160deg, rgba(192, 176, 235, 0.07), rgba(52, 22, 106, 0.18));
   border-radius: 28px;
   padding: 34px 36px 30px;
@@ -77,17 +80,31 @@ main {
     0 0 0 1px rgba(192, 176, 235, 0.12),
     0 18px 40px -20px rgba(52, 22, 106, 0.65);
   backdrop-filter: blur(2px);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.project::before {
-  content: "✦";
-  position: absolute;
-  top: -14px;
-  left: 34px;
-  background: #140b26;
+a.project:hover {
+  transform: translateY(-3px);
+  box-shadow:
+    0 0 0 1px rgba(216, 169, 27, 0.35),
+    0 22px 44px -18px rgba(52, 22, 106, 0.75);
+}
+
+.project .arrow {
+  display: inline-block;
   color: var(--gold);
-  padding: 0 10px;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
+  margin-left: 6px;
+  transition: transform 0.2s ease;
+}
+
+a.project:hover .arrow {
+  transform: translateX(4px);
+}
+
+.project .preview {
+  margin: 0;
+  color: #e6e1f2;
 }
 
 .project h2 {
@@ -137,11 +154,76 @@ footer p {
   margin: 0;
 }
 
+.back-link {
+  display: inline-block;
+  color: var(--gold);
+  text-decoration: none;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 0.95rem;
+  margin: 40px 0 10px 24px;
+  transition: transform 0.2s ease;
+}
+
+.back-link:hover {
+  transform: translateX(-4px);
+}
+
+.case-page main {
+  padding-top: 10px;
+}
+
+.case-page h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color: var(--lavender);
+  font-size: 2.2rem;
+  margin: 8px 0 2px;
+}
+
+.case-page .role {
+  color: var(--gold);
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1rem;
+  letter-spacing: 0.06em;
+  margin: 0 0 30px;
+}
+
+.case-section {
+  background: linear-gradient(160deg, rgba(192, 176, 235, 0.07), rgba(52, 22, 106, 0.18));
+  border-radius: 28px;
+  padding: 30px 34px;
+  margin-bottom: 26px;
+  box-shadow:
+    0 0 0 1px rgba(192, 176, 235, 0.12),
+    0 18px 40px -20px rgba(52, 22, 106, 0.65);
+}
+
+.case-section h3 {
+  font-family: 'Playfair Display', serif;
+  color: var(--gold);
+  font-size: 1.1rem;
+  margin: 0 0 10px;
+  letter-spacing: 0.04em;
+}
+
+.case-section p {
+  margin: 0;
+}
+
+.case-section img {
+  max-width: 100%;
+  border-radius: 16px;
+  margin-top: 6px;
+  box-shadow: 0 12px 30px -14px rgba(0,0,0,0.6);
+}
+
 @media (max-width: 480px) {
   .name-statement {
     font-size: 3.4rem;
   }
-  .project {
+  .project, .case-section {
     padding: 26px 22px 22px;
   }
 }

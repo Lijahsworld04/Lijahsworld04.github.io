@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Red Team Agent — Aalijah's Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="case-page">
+
+  <a class="back-link" href="index.html">← Back to portfolio</a>
+
+  <main>
+    <h1>Red Team Agent</h1>
+    <p class="role">Testing the defenses</p>
+
+    <div class="case-section">
+      <h3>Problem</h3>
+      <p>Needed a way to verify the blue team layer actually holds up under attack.</p>
+    </div>
+
+    <div class="case-section">
+      <h3>Architecture</h3>
+      <p>Built an attack library (7 categories) and a Runner that executes each test against the target agent, then an aggregate scoring system — starts at 100, deducts by severity, grades pass/partial/fail.</p>
+      <!-- <img src="images/redteam-diagram.png" alt="Red team agent architecture diagram"> -->
+    </div>
+
+    <div class="case-section">
+      <h3>My Role</h3>
+      <p>Hand-built the Runner node by node in n8n to understand each piece; designed the scoring/grading logic.</p>
+      <!-- <img src="images/redteam-canvas.png" alt="n8n Runner canvas screenshot"> -->
+    </div>
+
+    <div class="case-section">
+      <h3>Outcome</h3>
+      <p>Ran end to end against the backend agent and surfaced real weaknesses in the blue team defenses.</p>
+      <!-- <img src="images/redteam-scorecard.png" alt="Scorecard result screenshot"> -->
+    </div>
+  </main>
+
+</body>
+</html>
