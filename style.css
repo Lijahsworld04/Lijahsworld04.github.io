@@ -227,3 +227,20 @@ footer p {
     padding: 26px 22px 22px;
   }
 }
+
+.case-section figure {
+  margin: 0 0 24px;
+}
+
+.case-section figure:last-child {
+  margin-bottom: 0;
+}
+
+.case-section figcaption {
+  margin-top: 8px;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  color: var(--gold);
+  font-size: 0.9rem;
+  text-align: center;
+}
