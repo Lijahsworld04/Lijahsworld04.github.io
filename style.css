@@ -5,26 +5,28 @@
 body {
   margin: 0;
   font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
-  background: #0f1115;
-  color: #eaeaea;
+  background: #0e1912;
+  color: #e8e6e0;
   line-height: 1.6;
 }
 
 header {
   padding: 60px 24px 40px;
   text-align: center;
-  border-bottom: 1px solid #2a2d35;
+  border-bottom: 1px solid #2c3c2f;
 }
 
 header h1 {
   font-size: 2.4rem;
   margin: 0 0 12px;
+  color: #d4af37;
+  letter-spacing: 0.02em;
 }
 
 .subtitle {
   max-width: 600px;
   margin: 0 auto;
-  color: #a0a4ad;
+  color: #b8c2ba;
   font-size: 1.05rem;
 }
 
@@ -35,21 +37,27 @@ main {
 }
 
 .project {
-  background: #171a21;
-  border: 1px solid #2a2d35;
+  background: #142418;
+  border: 1px solid #2c3c2f;
+  border-left: 3px solid #6b4f8a;
   border-radius: 12px;
   padding: 28px 28px 24px;
   margin-bottom: 28px;
+  transition: border-left-color 0.2s ease;
+}
+
+.project:hover {
+  border-left-color: #d4af37;
 }
 
 .project h2 {
   margin: 0 0 4px;
-  color: #ff9d5c;
+  color: #d4af37;
 }
 
 .project .role {
   margin: 0 0 16px;
-  color: #7d8290;
+  color: #9b7fc4;
   font-size: 0.9rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -57,6 +65,11 @@ main {
 
 .project p {
   margin: 0 0 10px;
+  color: #e8e6e0;
+}
+
+.project strong {
+  color: #a8d8b9;
 }
 
 .project img {
@@ -68,6 +81,10 @@ main {
 footer {
   text-align: center;
   padding: 30px 24px 60px;
-  color: #7d8290;
+  color: #7d8f81;
   font-size: 0.9rem;
+}
+
+footer p {
+  margin: 0;
 }
