@@ -271,18 +271,18 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, var(--lavender), var(--gold));
+  background: linear-gradient(180deg, var(--lavender), var(--royal));
   border-radius: 10px;
   border: 2px solid #140b26;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(180deg, var(--gold), var(--lavender));
-  box-shadow: 0 0 6px rgba(216, 169, 27, 0.6);
+  background: linear-gradient(180deg, var(--royal), var(--lavender));
+  box-shadow: 0 0 6px rgba(192, 176, 235, 0.6);
 }
 
 * {
-  scrollbar-color: var(--gold) #140b26;
+  scrollbar-color: var(--lavender) #140b26;
 }
 
 a:hover, .project:hover {
