@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  background: #0f1115;
+  color: #eaeaea;
+  line-height: 1.6;
+}
+
+header {
+  padding: 60px 24px 40px;
+  text-align: center;
+  border-bottom: 1px solid #2a2d35;
+}
+
+header h1 {
+  font-size: 2.4rem;
+  margin: 0 0 12px;
+}
+
+.subtitle {
+  max-width: 600px;
+  margin: 0 auto;
+  color: #a0a4ad;
+  font-size: 1.05rem;
+}
+
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+.project {
+  background: #171a21;
+  border: 1px solid #2a2d35;
+  border-radius: 12px;
+  padding: 28px 28px 24px;
+  margin-bottom: 28px;
+}
+
+.project h2 {
+  margin: 0 0 4px;
+  color: #ff9d5c;
+}
+
+.project .role {
+  margin: 0 0 16px;
+  color: #7d8290;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.project p {
+  margin: 0 0 10px;
+}
+
+.project img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-top: 12px;
+}
+
+footer {
+  text-align: center;
+  padding: 30px 24px 60px;
+  color: #7d8290;
+  font-size: 0.9rem;
+}
