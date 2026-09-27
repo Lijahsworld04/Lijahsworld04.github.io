@@ -160,6 +160,15 @@ footer p {
   margin: 0;
 }
 
+footer a {
+  color: var(--lavender);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
 .back-link {
   display: inline-block;
   color: var(--gold);
