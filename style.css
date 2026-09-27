@@ -51,6 +51,12 @@ header {
   font-size: 0.9rem;
   opacity: 0.8;
   margin: 4px 0 22px;
+  animation: twinkle 2.5s ease-in-out infinite;
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
 }
 
 .subtitle {
@@ -243,4 +249,42 @@ footer p {
   color: var(--gold);
   font-size: 0.9rem;
   text-align: center;
+}
+
+.name-underline {
+  width: 140px;
+  height: 2px;
+  margin: 0 auto 18px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+
+body {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='starGrad' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='rgb(255,224,140)'/%3E%3Cstop offset='100%25' stop-color='rgb(216,169,27)'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M16 2 L19.4 12.1 L30 12.4 L21.5 18.9 L24.5 29 L16 22.9 L7.5 29 L10.5 18.9 L2 12.4 L12.6 12.1 Z' fill='url(%23starGrad)' stroke='rgb(140,100,10)' stroke-width='0.8' stroke-linejoin='round'/%3E%3Cellipse cx='12.5' cy='9.5' rx='2.3' ry='1.3' fill='rgba(255,255,255,0.55)' transform='rotate(-25 12.5 9.5)'/%3E%3C/svg%3E") 16 16, auto;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #140b26;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--lavender), var(--gold));
+  border-radius: 10px;
+  border: 2px solid #140b26;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, var(--gold), var(--lavender));
+  box-shadow: 0 0 6px rgba(216, 169, 27, 0.6);
+}
+
+* {
+  scrollbar-color: var(--gold) #140b26;
+}
+
+a:hover, .project:hover {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='sparkGrad' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='rgb(224,208,255)'/%3E%3Cstop offset='100%25' stop-color='rgb(216,169,27)'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M14 2 C14.6 8 16.6 10 22 10.6 C16.6 11.2 14.6 13.2 14 19.2 C13.4 13.2 11.4 11.2 6 10.6 C11.4 10 13.4 8 14 2 Z' fill='url(%23sparkGrad)'/%3E%3Cpath d='M23 16 C23.3 19 24.3 20 27 20.3 C24.3 20.6 23.3 21.6 23 24.6 C22.7 21.6 21.7 20.6 19 20.3 C21.7 20 22.7 19 23 16 Z' fill='rgb(255,255,255)' opacity='0.85'/%3E%3C/svg%3E") 16 16, pointer;
 }
