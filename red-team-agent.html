@@ -46,6 +46,15 @@
       </figure>
     </div>
 
+    <div class="case-section">
+      <h3>Walkthrough</h3>
+      <div class="video-wrap">
+        <video id="redTeamVideo" autoplay muted loop playsinline>
+          <source src="images/red-team-walkthrough.mp4" type="video/mp4">
+        </video>
+        <button class="unmute-btn" onclick="const v=document.getElementById('redTeamVideo'); v.muted=!v.muted; this.textContent=v.muted?'🔇':'🔊';">🔊</button>
+      </div>
+    </div>
   </main>
 
 </body>

@@ -59,14 +59,15 @@
       </figure>
     </div>
 
-    <!--
     <div class="case-section">
       <h3>Watch the Demo</h3>
       <div class="video-wrap">
-        <iframe src="VIDEO_EMBED_URL_HERE" title="Workflow demo" allowfullscreen></iframe>
+        <video id="blueTeamVideo" autoplay muted loop playsinline>
+          <source src="images/blue-team-walkthrough.mp4" type="video/mp4">
+        </video>
+        <button class="unmute-btn" onclick="const v=document.getElementById('blueTeamVideo'); v.muted=!v.muted; this.textContent=v.muted?'🔇':'🔊';">🔇</button>
       </div>
     </div>
-    -->
   </main>
 
 </body>
