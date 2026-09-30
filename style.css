@@ -340,3 +340,44 @@ a:hover, .project:hover {
   border-top: 1px solid rgba(192, 176, 235, 0.2);
   border-bottom: 1px solid rgba(192, 176, 235, 0.2);
 }
+
+.intro-extra {
+  max-width: 600px;
+  margin: 14px auto 0;
+  color: #d9c7a0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.resume-link {
+  display: inline-block;
+  margin-top: 18px;
+  color: var(--gold);
+  text-decoration: none;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  border-bottom: 1px solid var(--gold);
+  padding-bottom: 2px;
+  transition: opacity 0.2s ease;
+}
+
+.resume-link:hover {
+  opacity: 0.75;
+}
+
+.tools-used {
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tools-used span {
+  background: rgba(192, 176, 235, 0.12);
+  border: 1px solid rgba(192, 176, 235, 0.3);
+  color: var(--lavender);
+  font-size: 0.85rem;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-family: 'Playfair Display', serif;
+}
