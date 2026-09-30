@@ -374,12 +374,11 @@ a:hover, .project:hover {
 
 .tools-used span {
   background: rgba(192, 176, 235, 0.08);
-  border: 1px solid rgba(192, 176, 235, 0.35);
+  border: 1px solid rgba(192, 176, 235, 0.2);
   color: var(--lavender);
-  font-size: 0.8rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  padding: 7px 18px;
+  font-size: 0.9rem;
+  letter-spacing: 0.06em;
+  padding: 6px 16px;
   border-radius: 20px;
   font-family: 'Playfair Display', serif;
   font-style: italic;
