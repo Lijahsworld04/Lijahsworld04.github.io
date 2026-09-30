@@ -328,3 +328,15 @@ a:hover, .project:hover {
 .unmute-btn:hover {
   transform: scale(1.08);
 }
+
+.meta-note {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  color: var(--lavender);
+  font-size: 1.05rem;
+  text-align: center;
+  margin: 0 0 30px;
+  padding: 18px 24px;
+  border-top: 1px solid rgba(192, 176, 235, 0.2);
+  border-bottom: 1px solid rgba(192, 176, 235, 0.2);
+}
